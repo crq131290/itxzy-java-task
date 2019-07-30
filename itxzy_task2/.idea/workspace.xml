@@ -6,8 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8f68910-95fe-422e-8923-43f0aeea2784" name="默认" comment="" />
-    <ignored path="$PROJECT_DIR$/out/" />
+    <list default="true" id="e98b078d-f589-4d79-955d-d2dd9c0fec02" name="默认" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,94 +18,163 @@
     <session id="2075575">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="11" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.19" value="1" />
-          <entry key="project.open.time.20" value="1" />
-          <entry key="project.open.time.21" value="1" />
-          <entry key="project.open.time.35" value="1" />
-          <entry key="project.open.time.48" value="1" />
-          <entry key="project.open.time.50" value="1" />
-          <entry key="project.open.time.53" value="1" />
-          <entry key="project.open.time.6" value="1" />
-          <entry key="project.open.time.61" value="2" />
+          <entry key="project.open.time.39" value="1" />
+          <entry key="project.open.time.43" value="1" />
+          <entry key="project.open.time.47" value="1" />
+          <entry key="project.open.time.49" value="1" />
+          <entry key="project.open.time.51" value="1" />
+          <entry key="project.open.time.52" value="1" />
+          <entry key="project.open.time.57" value="1" />
+          <entry key="project.open.time.61" value="1" />
           <entry key="project.open.time.63" value="1" />
-          <entry key="project.open.time.66" value="1" />
-          <entry key="project.opened" value="13" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="bat" value="16" />
-          <entry key="dummy" value="12" />
-          <entry key="java" value="1149" />
-          <entry key="jsp" value="373" />
-          <entry key="properties" value="276" />
-          <entry key="xml" value="1212" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="1149" />
-          <entry key="JSP" value="373" />
-          <entry key="PLAIN_TEXT" value="28" />
-          <entry key="Properties" value="276" />
-          <entry key="SQL" value="2" />
-          <entry key="XML" value="1210" />
+          <entry key="project.open.time.64" value="1" />
+          <entry key="project.opened" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="bat" value="5" />
-          <entry key="class" value="1" />
           <entry key="iml" value="1" />
-          <entry key="java" value="18" />
-          <entry key="jsp" value="13" />
-          <entry key="properties" value="7" />
-          <entry key="xml" value="14" />
+          <entry key="java" value="78" />
+          <entry key="jsp" value="8" />
+          <entry key="kt" value="1" />
+          <entry key="properties" value="10" />
+          <entry key="txt" value="1" />
+          <entry key="xml" value="33" />
+          <entry key="yml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="1" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="18" />
-          <entry key="JSP" value="13" />
-          <entry key="PLAIN_TEXT" value="5" />
-          <entry key="Properties" value="7" />
-          <entry key="XML" value="14" />
+          <entry key="JAVA" value="78" />
+          <entry key="JSP" value="8" />
+          <entry key="Kotlin" value="1" />
+          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="Properties" value="10" />
+          <entry key="XML" value="33" />
+          <entry key="YAML" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="4161" />
+          <entry key="jsp" value="115" />
+          <entry key="kt" value="18" />
+          <entry key="properties" value="350" />
+          <entry key="xml" value="1660" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="4161" />
+          <entry key="JSP" value="115" />
+          <entry key="Kotlin" value="18" />
+          <entry key="Properties" value="350" />
+          <entry key="SQL" value="1" />
+          <entry key="XML" value="1659" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jnshu/crq/pojo/BeanValidateResult.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+            <state relative-caret-position="350">
+              <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jnshu/crq/pojo/Student.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="65" />
+            <state relative-caret-position="475">
+              <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controller/StudentController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jnshu/crq/utils/BeanValidateUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="29" column="36" lean-forward="true" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
+            <state relative-caret-position="1075">
+              <caret line="54" column="103" selection-start-line="54" selection-start-column="76" selection-end-line="54" selection-end-column="103" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jnshu/crq/mapper/StudentMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="500">
+              <caret line="23" selection-start-line="20" selection-end-line="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jnshu/crq/common/HandleException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/StudentMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1025">
+              <caret line="41" selection-start-line="40" selection-start-column="13" selection-end-line="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jnshu/crq/serviceImpl/StudentServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2150">
+              <caret line="92" column="28" selection-start-line="92" selection-start-column="28" selection-end-line="92" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jnshu/crq/common/Page.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="525">
+              <caret line="21" selection-start-line="17" selection-start-column="30" selection-end-line="21" />
+              <folding>
+                <element signature="e#474#475#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jnshu/crq/contrller/StudentController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2650">
+              <caret line="117" selection-start-line="117" selection-end-line="117" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jnshu/crq/service/StudentService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -116,47 +184,62 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Kotlin Class" />
         <option value="Jsp File" />
+        <option value="XML Properties File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Student</find>
-      <find>SimpleControllerHandlerAdapter</find>
-      <find>jetty</find>
-      <find>JRE_HOME</find>
-      <find>\jre</find>
+      <find>F</find>
+      <find>Valve</find>
+      <find>CollectionUtils</find>
+      <find>getNullValidateResultList</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/../itxzy_task2_1/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/log4j2.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/c3p0.properties" />
-        <option value="$PROJECT_DIR$/src/main/resources/lo4j2.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/pojo/StudentBean.java" />
-        <option value="$PROJECT_DIR$/src/main/java/mapper/StudentMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controler/StudentController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/Controller.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/controllerImpl/StudentController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/StudentMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/controllerImpl/StudentControllerImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/springMVC.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/StudentControllerImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/service/StudentService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/serviceImpl/StudentServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/applicationContext.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/studentList.jsp" />
-        <option value="D:/Program Files/Tomcat9/bin/setclasspath.bat" />
-        <option value="D:/Program Files/Tomcat9/bin/catalina.bat" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/StudentController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jnshu/crq/pojo/Student.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jnshu/crq/contrller/StudentController.kt" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jnshu/crq/common/ResponseBo.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/error/500.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jnshu/crq/common/HandleException.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/messages.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/messages/zh_CN.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/messages/us.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/springMvc.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jnshu/crq/common/ResponseTo.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/message/msg2.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/message/msg.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/message/messages_zh_CN.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/message/messages_en_US.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jnshu/crq/utils/ValidateResult.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jnshu/crq/utils/ValidateUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jnshu/crq/pojo/AddUserRequest.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jnshu/crq/pojo/BeanValidateResult.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jnshu/crq/pojo/ValidateBeanResult.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jnshu/crq/utils/BeanValidateUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jnshu/crq/utils/ValidateBeanUtil.java" />
+        <option value="$PROJECT_DIR$/src/test/java/BeanValidateUtilTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jnshu/crq/pojo/Page.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jnshu/crq/service/StudentService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jnshu/crq/contrller/StudentController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jnshu/crq/serviceImpl/StudentServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/StudentMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jnshu/crq/mapper/StudentMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jnshu/crq/common/Page.java" />
       </list>
     </option>
   </component>
@@ -197,8 +280,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -230,7 +311,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="crq" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="itxzy_task2" type="b2602c69:ProjectViewProjectNode" />
@@ -238,6 +319,25 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="crq" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="itxzy_task2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="itxzy_task2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="crq" type="462c0819:PsiDirectoryNode" />
+              <item name="contrller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="itxzy_task2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="itxzy_task2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="crq" type="462c0819:PsiDirectoryNode" />
               <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -246,23 +346,8 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="crq" type="462c0819:PsiDirectoryNode" />
               <item name="pojo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="itxzy_task2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="itxzy_task2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="itxzy_task2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="itxzy_task2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="serviceImpl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="itxzy_task2" type="b2602c69:ProjectViewProjectNode" />
@@ -276,24 +361,8 @@
               <item name="itxzy_task2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="itxzy_task2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="itxzy_task2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="itxzy_task2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="itxzy_task2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="jsp" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="itxzy_task2" type="b2602c69:ProjectViewProjectNode" />
@@ -303,32 +372,44 @@
             </path>
             <path>
               <item name="itxzy_task2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="外部库" type="cb654da1:ExternalLibrariesNode" />
+              <item name="itxzy_task2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="itxzy_task2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="itxzy_task2" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value=",&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/IT/MyJavaPro/itxzy_task2/src/main/java/com/jnshu/crq/common/HandleException.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560389943279" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/target/task2.war" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1563861341324" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.49080458" />
-    <property name="settings.editor.selected.configurable" value="preferences.applicationServers" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\IT\MyJavaPro\itxzy_task2\src\main\webapp\WEB-INF\lib" />
-      <recent name="D:\IT\MyJavaPro\itxzy_task2\src\main\webapp\WEB-INF\jsp" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.jnshu.crq.pojo" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\IT\MyJavaPro\itxzy_task2\src\main\resources\messages" />
+      <recent name="D:\IT\MyJavaPro\itxzy_task2\src\main\resources" />
+      <recent name="D:\IT\MyJavaPro\itxzy_task2\src\main\webapp\WEB-INF" />
+      <recent name="D:\IT\MyJavaPro\itxzy_task2\src\main\webapp\WEB-INF\error" />
+      <recent name="D:\IT\MyJavaPro\itxzy_task2" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -343,19 +424,30 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="MyTomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.20" ALTERNATIVE_JRE_ENABLED="false" ALTERNATIVE_JRE_PATH="1.8">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/test" />
+  <component name="RunManager" selected="JUnit.BeanValidateUtilTest.testValidate">
+    <configuration name="BeanValidateUtilTest.testValidate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="itxzy_task2" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BeanValidateUtilTest" />
+      <option name="METHOD_NAME" value="testValidate" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="itxzy_task2" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.20" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8180/task2/" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <file path="$PROJECT_DIR$/target/task2.war">
+        <artifact name="itxzy_task2:war">
           <settings>
-            <option name="CONTEXT_PATH" value="test" />
+            <option name="CONTEXT_PATH" value="/task2" />
           </settings>
-        </file>
+        </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="未命名_itxzy_task2" />
+        <option name="BASE_DIRECTORY_NAME" value="未命名_itxzy_task2_2" />
+        <option name="HTTP_PORT" value="8180" />
       </server-settings>
       <predefined_log_file id="Tomcat" enabled="true" />
       <predefined_log_file id="Tomcat Catalina" enabled="true" />
@@ -363,7 +455,7 @@
       <predefined_log_file id="Tomcat Host Manager" enabled="false" />
       <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="52875" />
+        <option name="DEBUG_PORT" value="55662" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -412,38 +504,55 @@
       </ConfigurationWrapper>
       <method v="2">
         <option name="Make" enabled="true" />
-        <option name="BuildArtifacts" enabled="false" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="itxzy_task2:war" />
+        </option>
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Tomcat Server.itxzy_task2" />
+      <item itemvalue="JUnit.BeanValidateUtilTest.testValidate" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.BeanValidateUtilTest.testValidate" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a8f68910-95fe-422e-8923-43f0aeea2784" name="默认" comment="" />
-      <created>1558532681943</created>
+      <changelist id="e98b078d-f589-4d79-955d-d2dd9c0fec02" name="默认" comment="" />
+      <created>1562988445357</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1558532681943</updated>
-      <workItem from="1558532684443" duration="6270000" />
-      <workItem from="1558618935581" duration="7762000" />
-      <workItem from="1558674375223" duration="720000" />
-      <workItem from="1558675328255" duration="361000" />
-      <workItem from="1558707035822" duration="2951000" />
-      <workItem from="1558962769171" duration="7628000" />
-      <workItem from="1560351548243" duration="167000" />
-      <workItem from="1560351757494" duration="926000" />
-      <workItem from="1560352735350" duration="2016000" />
-      <workItem from="1560387009722" duration="2919000" />
-      <workItem from="1560389996999" duration="639000" />
-      <workItem from="1560433836759" duration="5166000" />
-      <workItem from="1560490017520" duration="1865000" />
+      <updated>1562988445357</updated>
+      <workItem from="1562988447148" duration="17013000" />
+      <workItem from="1563198728905" duration="1831000" />
+      <workItem from="1563283313272" duration="5147000" />
+      <workItem from="1563342238043" duration="461000" />
+      <workItem from="1563370368610" duration="6470000" />
+      <workItem from="1563456822060" duration="3187000" />
+      <workItem from="1563546793725" duration="2821000" />
+      <workItem from="1563802724990" duration="5295000" />
+      <workItem from="1563856507386" duration="4724000" />
+      <workItem from="1563889078312" duration="1196000" />
+      <workItem from="1563944564236" duration="1181000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="BeanValidateUtilTest_testValidate - 2019.07.19 at 23h 17m 16s.xml">
+      <configuration name="BeanValidateUtilTest.testValidate" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BeanValidateUtilTest_testValidate - 2019.07.22 at 21h 48m 37s.xml">
+      <configuration name="BeanValidateUtilTest.testValidate" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39390000" />
+    <option name="totallyTimeSpent" value="49326000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -458,7 +567,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2935657" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13941018" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -466,22 +575,23 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="设计器" order="6" />
       <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.329429" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.9443631" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.329429" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.329429" />
-      <window_info anchor="bottom" id="Spring" order="8" weight="0.329429" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.5475842" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="调试" order="13" />
-      <window_info anchor="bottom" id="Application Servers" order="14" weight="0.329429" />
-      <window_info anchor="bottom" id="Java Enterprise" order="15" weight="0.329429" />
+      <window_info anchor="bottom" id="Run" order="0" weight="0.74377745" />
+      <window_info anchor="bottom" id="Terminal" order="1" weight="0.329429" />
+      <window_info anchor="bottom" id="Messages" order="2" weight="0.329429" />
+      <window_info anchor="bottom" id="Spring" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Java Enterprise" order="5" />
+      <window_info anchor="bottom" id="Database Changes" order="6" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="调试" order="8" />
+      <window_info anchor="bottom" id="Message" order="9" />
+      <window_info anchor="bottom" id="Find" order="10" />
+      <window_info anchor="bottom" id="Debug" order="11" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="14" weight="0.329429" />
+      <window_info anchor="bottom" id="Application Servers" order="15" weight="0.329429" />
+      <window_info anchor="bottom" id="Inspection Results" order="16" weight="0.329429" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -491,9 +601,10 @@
       <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2774799" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27882037" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -501,22 +612,23 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="设计器" order="6" />
       <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.329429" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.9443631" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.329429" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.329429" />
-      <window_info anchor="bottom" id="Spring" order="8" weight="0.329429" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.5475842" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="调试" order="13" />
-      <window_info anchor="bottom" id="Application Servers" order="14" weight="0.329429" />
-      <window_info anchor="bottom" id="Java Enterprise" order="15" weight="0.329429" />
+      <window_info anchor="bottom" id="Inspection Results" order="0" weight="0.329429" />
+      <window_info anchor="bottom" id="Run" order="1" weight="0.9341142" />
+      <window_info anchor="bottom" id="Terminal" order="2" weight="0.329429" />
+      <window_info anchor="bottom" id="Messages" order="3" weight="0.329429" />
+      <window_info anchor="bottom" id="Spring" order="4" />
+      <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Java Enterprise" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="调试" order="9" />
+      <window_info anchor="bottom" id="Message" order="10" />
+      <window_info anchor="bottom" id="Find" order="11" />
+      <window_info anchor="bottom" id="Debug" order="12" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="13" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="14" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="15" weight="0.329429" />
+      <window_info anchor="bottom" id="Application Servers" order="16" weight="0.329429" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -526,6 +638,7 @@
       <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -535,244 +648,293 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/itxzy_task2.iml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jnshu/crq/contrller/StudentController.kt" />
+    <entry file="file://$PROJECT_DIR$/../itxzy_task2_1/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/StudentMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="36" column="72" selection-start-line="36" selection-start-column="65" selection-end-line="36" selection-end-column="72" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/../itxzy_task2_1/src/main/webapp/WEB-INF/view/index.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j2.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/mapper/StudentMapper.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="9" column="56" lean-forward="true" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pojo/Student.java">
+    <entry file="file://$PROJECT_DIR$/../岳小鹏复盘demo/sildenafil-master/src/main/java/com/jnshu/sildenafil/common/domain/ResponseBo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+        <state relative-caret-position="430">
+          <caret line="56" column="5" lean-forward="true" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/studentInfo.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../itxzy_task2_1/src/main/java/controller/StudentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="164" column="30" lean-forward="true" selection-start-line="164" selection-start-column="30" selection-end-line="164" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/messages.xml" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/messages/messages_en_US.properties" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1225">
+          <caret line="49" column="3" selection-start-line="49" selection-start-column="3" selection-end-line="52" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/error/500.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../itxzy_task2_1/src/main/java/controller/Handler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="31" column="7" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jnshu/crq/common/ResponseTo.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/message/messages_en_US.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="37" selection-start-column="37" selection-end-column="37" />
+        </state>
+      </provider>
+      <provider editor-type-id="ResourceBundle" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/message/messages_zh_CN.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="27" selection-start-column="27" selection-end-column="27" />
+        </state>
+      </provider>
+      <provider editor-type-id="ResourceBundle" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jnshu/crq/utils/ValidateResult.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jnshu/crq/utils/ValidateUtil.java" />
+    <entry file="file://D:/Program Files/Tomcat9/conf/server.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1055">
+          <caret line="163" column="13" selection-start-line="163" selection-start-column="13" selection-end-line="163" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="12" column="56" lean-forward="true" selection-start-line="12" selection-start-column="56" selection-end-line="12" selection-end-column="56" />
+        <state relative-caret-position="552">
+          <caret line="62" column="8" selection-start-line="61" selection-start-column="11" selection-end-line="62" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/c3p0.properties">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jnshu/crq/common/ResponseBo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="13" selection-start-line="11" selection-end-line="11" selection-end-column="13" />
+        <state relative-caret-position="350">
+          <caret line="14" column="51" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/studentList.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/springMvc.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="25" selection-start-line="25" selection-end-line="25" selection-end-column="35" />
+        <state relative-caret-position="580">
+          <caret line="34" column="42" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/index.jsp">
+    <entry file="file://$PROJECT_DIR$/../itxzy_task1/src/main/java/Service/ServiceStudent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="13" selection-start-line="13" selection-end-line="13" selection-end-column="13" />
-        </state>
+        <state relative-caret-position="-3" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/target/task2/index.jsp">
+    <entry file="file://$PROJECT_DIR$/../springtest1/src/main/java/com/crq/spring/CollectionBean.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://D:/Program Files/Tomcat9/bin/setclasspath.bat">
+    <entry file="file://$PROJECT_DIR$/../springtest1/src/main/java/com/crq/spring/UserFactory.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../mybatistest/src/main/java/com/crq/mybatisdao1/UserDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="41" column="11" lean-forward="true" selection-start-line="41" selection-start-column="11" selection-end-line="41" selection-end-column="11" />
+        <state relative-caret-position="150">
+          <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/target/classes/controller/StudentController.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jnshu/crq/pojo/ValidateBeanResult.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jnshu/crq/pojo/AddUserRequest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-300" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/springMVC.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="20" column="54" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
+        <state relative-caret-position="375">
+          <caret line="21" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/StudentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jnshu/crq/utils/ValidateBeanUtil.java" />
+    <entry file="file://$PROJECT_DIR$/../岳小鹏复盘demo/sildenafil-master/src/main/java/com/jnshu/sildenafil/common/exception/ServiceException.java">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://D:/Program Files/Tomcat9/bin/catalina.bat">
+    <entry file="file://$PROJECT_DIR$/../岳小鹏复盘demo/sildenafil-master/src/main/java/com/jnshu/sildenafil/util/ValidationUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="110" column="4" selection-start-line="110" selection-start-column="4" selection-end-line="110" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Program Files/Tomcat9/conf/logging.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3">
-          <caret line="36" column="54" lean-forward="true" selection-start-line="36" selection-start-column="54" selection-end-line="36" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/serviceImpl/StudentServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
+        <state relative-caret-position="855">
+          <caret line="48" selection-start-line="33" selection-start-column="15" selection-end-line="33" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="117" column="25" selection-start-line="117" selection-start-column="20" selection-end-line="117" selection-end-column="25" />
+        <state relative-caret-position="30">
+          <caret line="118" column="22" lean-forward="true" selection-start-line="118" selection-start-column="22" selection-end-line="118" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/resin.properties">
+    <entry file="file://$PROJECT_DIR$/src/test/java/BeanValidateUtilTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="161" column="18" selection-start-line="161" selection-start-column="18" selection-end-line="161" selection-end-column="18" />
+        <state relative-caret-position="429">
+          <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/resin2.properties">
+    <entry file="file://$PROJECT_DIR$/../../Java/20190224-Collection/Set/TreeSetDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="604">
-          <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
+        <state relative-caret-position="-600" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Java/20190224-Collection/Set/HashSetDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="39" column="31" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/StudentController.java">
+    <entry file="file://$PROJECT_DIR$/../../Java/20190224-Collection/Generic泛型/GenericDemo2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="29" column="36" lean-forward="true" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
+        <state relative-caret-position="425">
+          <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Java/20190224-Collection/Generic泛型/GenericDemo3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="80" selection-start-line="80" selection-end-line="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Java/20190224-Collection/Generic泛型/GenericDemo4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="82" column="5" selection-start-line="82" selection-start-column="5" selection-end-line="82" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Java/20190224-Collection/Generic泛型/GenericDemo5.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Java/20190224-Collection/Generic泛型/GenericDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="43" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../岳小鹏复盘demo/sildenafil-master/src/main/resources/mapper/CollectionAssetMapper.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../岳小鹏复盘demo/sildenafil-master/src/main/resources/mapper/StudentMapper.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jnshu/crq/pojo/BeanValidateResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jnshu/crq/pojo/Student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jnshu/crq/utils/BeanValidateUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1075">
+          <caret line="54" column="103" selection-start-line="54" selection-start-column="76" selection-end-line="54" selection-end-column="103" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jnshu/crq/mapper/StudentMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="65" />
+        <state relative-caret-position="500">
+          <caret line="23" selection-start-line="20" selection-end-line="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/StudentMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+        <state relative-caret-position="1025">
+          <caret line="41" selection-start-line="40" selection-start-column="13" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jnshu/crq/serviceImpl/StudentServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2150">
+          <caret line="92" column="28" selection-start-line="92" selection-start-column="28" selection-end-line="92" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jnshu/crq/common/Page.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="21" selection-start-line="17" selection-start-column="30" selection-end-line="21" />
+          <folding>
+            <element signature="e#474#475#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jnshu/crq/contrller/StudentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2650">
+          <caret line="117" selection-start-line="117" selection-end-line="117" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jnshu/crq/service/StudentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jnshu/crq/common/HandleException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <last-edited>itxzy_task2:war</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.5" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>Spring</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.49080458" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>itxzy_task2</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>jstl</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.49080458" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
       <state key="ScopeChooserConfigurable.UI">
         <settings>
           <splitter-proportions>
