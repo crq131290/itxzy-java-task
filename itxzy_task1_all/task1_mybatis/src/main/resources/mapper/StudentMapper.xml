@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--
+namespace:mapper接口的全路径
+paramterType:参数类型  java类型  pojo（保存的时候）
+resultType:结果类型  数据库的字段名必须和实体类的属性名一致
+#{id}：一个占位符
+-->
+<mapper namespace="com.jnshu.crq.mapper.StudentMapper">
+    <insert id="insertStudent" parameterType="Student">
+        <selectKey resultType="int" order="AFTER" keyProperty="id">
+            SELECT LAST_INSERT_ID()
+        </selectKey>
+        insert into student (name,qq,skill) values (#{name},#{qq},#{skill})
+    </insert>
+
+    <delete id="deleteStudentById" parameterType="int">
+        delete from student where id = #{id}
+    </delete>
+
+    <update id="updateStudent" parameterType="Student">
+        update student set name=#{name},qq=#{qq},skill=#{skill} where id = #{id}
+    </update>
+
+    <select id="getStudentById" parameterType="int" resultType="Student">
+        select * from student where id = #{id}
+    </select>
+
+</mapper>
