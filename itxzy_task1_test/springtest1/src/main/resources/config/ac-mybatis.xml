@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context-4.2.xsd ">
+    <!--1.引入属性文件，在配置中占位使用-->
+   <context:property-placeholder location="classpath:config/jdbcConfig.properties"></context:property-placeholder>
+    <!-- 1.将连接池放入spring容器中 -->
+    <bean name="datasource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+        <property name="driverClass" value="${jdbc.driver}"></property>
+        <property name="jdbcUrl" value="${jdbc.url}"></property>
+        <property name="user" value="${jdbc.user}"></property>
+        <property name="password" value="${jdbc.pwd}"></property>
+        <!--连接池其他的配置-->
+        <!-- 当连接池中的连接耗尽的时候c3p0一次同时获取的连接数   -->
+        <property name="acquireIncrement" value="5"></property>
+        <!-- 初始连接池大小 -->
+        <property name="initialPoolSize" value="10"></property>
+        <!-- 连接池中连接最小个数 -->
+        <property name="minPoolSize" value="5"></property>
+        <!-- 连接池中连接最大个数 -->
+        <property name="maxPoolSize" value="20"></property>
+    </bean>
+
+    <!--3 会话工厂bean sqlSessionFactoryBean -->
+    <bean name="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <!-- 数据源 -->
+        <property name="dataSource" ref="datasource"></property>
+        <!-- 配置数据库表对应的java实体类 -->
+        <property name="typeAliasesPackage" value="com.crq.bean"></property>
+        <!-- 自动扫描entity目录, 省掉Configuration.xml里的手工配置  mapper -->
+        <property name="mapperLocations" value="classpath:com/crq/springmybatis/dao/UserDao.xml"></property>
+    </bean>
+
+
+    <!---4自动扫描对象关系映射-->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <!--指定会话工厂，如果当前上下文中只定义了一个则该属性可省去-->
+        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"></property>
+        <!-- 指定要自动扫描接口的基础包，实现接口 -->
+        <property name="basePackage" value="com.crq.springmybatis.dao"></property>
+    </bean>
+
+    <!---->
+
+
+
+
+</beans>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--将User对象交给spring容器管理  ，其中name任意，class为全包名
+    class属性：被管理对象的完整类名
+    name属性：给被管理的对象起个名字，根据该名称获得对象
+        可以重复，可以使用特殊字符
+    id属性:与name属性一模一样
+        名称不可重复，不能使用特殊字符
+    结论：尽量使用name属性
+-->
+    <!--创建方式1：空参构造创建  -->
+    <bean name="user" class="com.crq.bean.User"></bean>
+    <!--创建方式2：静态工厂创建方式
+        调用UserFactory的createUser方法创建名为user3的对象，放入容器
+    -->
+    <bean name="user3" class="com.crq.spring.UserFactory"
+                        factory-method="createUser"></bean><!--创建类的方法-->
+
+    <!--创建方式3：实例工厂创建
+          调用UserFactory对象的createUser2方法创建名为user3的对象，放入容器
+        -->
+    <!--  userFactory实例工厂 ，这里其实就是一个依赖的过程，
+    创建user4依赖userFactory，所以我们再像容器要user4时，容器会帮我们创建一个userFactory实例出来-->
+    <bean name="userFactory" class="com.crq.spring.UserFactory"></bean>
+    <bean name="user4" factory-bean="userFactory" factory-method="createUser2"></bean>
+
+
+    <bean name="userSingle" class="com.crq.bean.User" scope="prototype"></bean>
+
+    <bean name="userInit" class="com.crq.bean.User" destroy-method="userInit"></bean>
+
+<!-- 属性注入 setter -->
+    <bean name="user2" class="com.crq.bean.User">
+        <property name="name" value="王花花"></property>
+        <property name="age" value="15"></property>
+        <property name="qq" value="123654789"></property>
+        <property name="id" value="7"></property>
+        <property name="car" ref="car"></property>
+    </bean>
+
+    <bean name="car" class="com.crq.bean.Car">
+        <property name="color" value="blue"></property>
+        <property name="name"  value="法拉利"></property>
+    </bean>
+
+    <bean name="consUser" class="com.crq.bean.User">
+        <!-- name属性：构造函数参数名 -->
+        <!-- index属性：构造函数参数索引  -->
+        <!-- type属性：构造函数参数类型 -->
+        <constructor-arg name="name" value="李栓但" type="java.lang.String"></constructor-arg>
+        <constructor-arg name="age" index="1" value="17"></constructor-arg>
+        <constructor-arg name="car"  ref="car"></constructor-arg>
+    </bean>
+
+    <bean name="userp" class="com.crq.bean.User" p:name="jack" p:age="12" p:car-ref="car"></bean>
+
+    <bean name="userSpel" class="com.crq.bean.User">
+        <property name="name" value="#{user2.name}"></property>
+        <property name="age" value="#{user2.age}"></property>
+    </bean>
+
+    <bean name="cb" class="com.crq.spring.CollectionBean">
+        <property name="arr">
+            <array>
+                <value>user2</value>
+                <value>userp</value>
+                <ref bean="user2"/>
+            </array>
+        </property>
+        <property name="list">
+            <list>
+                <value>user2</value>
+                <value>userp</value>
+                <ref bean="car"></ref>
+            </list>
+        </property>
+        <property name="map">
+            <map>
+                <entry key="1" value="abc"></entry>
+                <entry key="1" value="def"></entry>
+                <entry key-ref="car" value-ref="car"></entry>
+            </map>
+        </property>
+        <property name="prop">
+            <props>
+                <prop key="abc">abc</prop>
+            </props>
+        </property>
+    </bean>
+</beans>
+

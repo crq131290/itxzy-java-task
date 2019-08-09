@@ -1,0 +1,14 @@
+.student-list table{
+    border:1px solid #afd9ee;
+    border-radius: 3px;
+}
+.student-list table td{
+    padding:15px;
+    text-align: center;
+}
+
+.student-list table tr:first-child{
+    background: #31b0d5;
+    color:#fff;
+}
+

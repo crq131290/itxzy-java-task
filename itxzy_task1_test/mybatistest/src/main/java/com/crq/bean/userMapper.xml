@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.crq.bean.userMapper">
+    <!--
+        根据 uid 查询 person 表中的数据
+      id:唯一标识符，此文件中的id值不能重复
+      resultType:返回值类型，一条数据库记录也就对应实体类的一个对象
+      parameterType:参数类型，也就是查询条件的类型
+  -->
+    <select id="selectUserById" resultType="com.crq.bean.User" parameterType="int">
+        <!-- 这里和普通的sql 查询语句差不多，对于只有一个查询条件后面的 #{pid}表示占位符，
+            里面不一定要写uid,写啥都可以，但是不要空着；如果有多个查询条件，则要写pojo类里面的属性 -->
+        select * from UserTbl where id = #{uid}
+    </select>
+
+    <!-- 查询UserTbl表所有数据 -->
+    <select id="getAllUser" resultType="com.crq.bean.User">
+        select * from UserTbl
+    </select>
+
+    <!-- 根据uid更新数据 -->
+    <update id="updateUserById" parameterType="com.crq.bean.User">
+        update UserTbl set name = #{uname},email = #{uemail} where id = #{uid}
+    </update>
+
+    <!-- 向 UserTbl 表插入一条数据 -->
+    <insert id="addUser" parameterType="com.crq.bean.User">
+        insert into UserTbl(id,name,email) values(#{uid},#{uname},#{uemail})
+    </insert>
+
+    <!-- 根据 uid 删除数据 -->
+    <delete id="deleteUserById" parameterType="Long">
+        delete from UserTbl where id=#{uid}
+    </delete>
+
+</mapper>

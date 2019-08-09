@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--
+namespace:mapper接口的全路径
+paramterType:参数类型  java类型  pojo（保存的时候）
+resultType:结果类型  数据库的字段名必须和实体类的属性名一致
+#{id}：一个占位符
+-->
+<mapper namespace="com.crq.mybatisdao2.UserMapper">
+    <select id="getUserById" parameterType="int" resultType="User">
+        select * from UserTbl where id = #{uid}
+    </select>
+
+</mapper>

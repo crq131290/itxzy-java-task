@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--mybatis mapper配置文件，根据com..mapper配合动态生成其实现类，主要操作数据库-->
+<!--命名空间应该是对应接口的包名+接口名 -->
+<mapper namespace="com.jnshu.crq.mapper.StudentMapper">
+    <!--<insert id="insertStudent" parameterType="Student" keyProperty="id" useGeneratedKeys="true">-->
+        <!--insert into student (name,qq,id) values (#{name},#{qq},#{id})-->
+        <!--返回主键id-->
+    <!--</insert>-->
+
+    <insert id="insertStudent" parameterType="Student" >
+        <selectKey order="AFTER" resultType="int" keyProperty="id">
+            select LAST_INSERT_ID()
+        </selectKey>
+        insert into student (name,qq,skill) values (#{name},#{qq},#{skill})
+    </insert>
+
+    <delete id="deleteStudentById" parameterType="int">
+        delete from student where id = #{id}
+    </delete>
+
+    <update id="updateStudent" parameterType="Student">
+        update student set name=#{name},qq=#{qq},skill=#{skill} where id = #{id}
+    </update>
+
+    <select id="getStudentById" parameterType="int" resultType="Student">
+        select name,qq,skill,id from student where id = #{id}
+    </select>
+
+    <select id="getStudents" resultType="Student">
+        select name,qq,skill,id from student;
+    </select>
+</mapper>
