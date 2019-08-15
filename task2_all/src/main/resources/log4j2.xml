@@ -9,8 +9,9 @@
 <Configuration status="WARN" monitorInterval="600">
 
     <Properties>
+        <!-- logs 指向tomcat安装目录下的bin目录：tomcat/bin/logs目录-->
         <!-- 配置日志文件输出目录，此配置将日志输出到tomcat根目录下的指定文件夹，本地项目根目录 -->
-        <Property name="LOG_HOME">logs</Property>
+        <Property name="LOG_HOME">${sys:catalina.home}/logs/sys</Property>
     </Properties>
 
     <Appenders>
@@ -18,18 +19,7 @@
         <!--这个输出控制台的配置，这里输出除了warn和error级别的信息到System.out-->
         <Console name="console_out_appender" target="SYSTEM_OUT">
             <!-- 控制台只输出level及以上级别的信息(onMatch),其他的直接拒绝(onMismatch) -->
-            <ThresholdFilter level="warn" onMatch="DENY" onMismatch="ACCEPT"/>
-            <!-- 输出日志的格式
-            <PatternLayout pattern="%5p [%t] %d{yyyy-MM-dd HH:mm:ss} (%F:%L) %m%n"/>-->
-            <PatternLayout>
-                <pattern>%highlight{[%p] %-d{yyyy-MM-dd HH:mm:ss} --> %l%n[massage] %m%n}{FATAL=red, ERROR=red, WARN=yellow, INFO=cyan, DEBUG=cyan,TRACE=blue}</pattern>
-            </PatternLayout>
-        </Console>
-
-        <!--这个输出控制台的配置，这里输出除了warn和error级别的信息到System.out-->
-        <Console name="console_err_appender" target="SYSTEM_ERR">
-            <!-- 控制台只输出level及以上级别的信息(onMatch),其他的直接拒绝(onMismatch) -->
-            <ThresholdFilter level="warn" onMatch="ACCEPT" onMismatch="DENY"/>
+            <ThresholdFilter level="info" onMatch="ACCEPT" onMismatch="DENY"/>
             <!-- 输出日志的格式
             <PatternLayout pattern="%5p [%t] %d{yyyy-MM-dd HH:mm:ss} (%F:%L) %m%n"/>-->
             <PatternLayout>
@@ -40,7 +30,7 @@
         <!--文件会打印出所有信息，这个log每次运行程序会自动清空，由append属性决定，这个也挺有用的，适合临时测试用,append值叠加的意思-->
         <File name="test_logs" fileName="${LOG_HOME}/test.log" append="false">
             <PatternLayout>
-                <pattern>%5p [%t] %d{yyyy-MM-dd HH:mm:ss} (%F:%L) %m%n</pattern>
+                <pattern>%5p [%t] %d{yyyy-MM-dd HH:mm:ss} (%F:%L) --uuid--[%X{uuid}] %m%n </pattern>
             </PatternLayout>
         </File>
 
@@ -74,6 +64,12 @@
                 <ThresholdFilter level="error" onMatch="ACCEPT" onMismatch="DENY"/>
             </Filters>
         </RollingRandomAccessFile>
+
+        <RollingFile name="RollingFile" fileName="${LOG_HOME}/app.log"
+                     filePattern="${LOG_HOME}/$${date:yyyy-MM}/app-%d{MM-dd-yyyy}-%i.log.gz">
+            <PatternLayout pattern="%d{yyyy.MM.dd 'at' HH:mm:ss z} %-5level %class{36} %L %M - %msg%xEx%n"/>
+            <SizeBasedTriggeringPolicy size="5 MB" />
+        </RollingFile>
     </Appenders>
 
     <!--然后定义logger，只有定义了logger并引入的appender，appender才会生效-->
@@ -81,10 +77,10 @@
         <!-- 配置日志的根节点 -->
         <root level="info">
             <appender-ref ref="console_out_appender"/>
-            <appender-ref ref="console_err_appender"/>
             <appender-ref ref="warn_appender"/>
             <appender-ref ref="error_appender"/>
             <appender-ref ref="test_logs"/>
+            <appender-ref ref="RollingFile"/>
         </root>
 
         <!-- 第三方日志系统 -->

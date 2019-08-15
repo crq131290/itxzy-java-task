@@ -32,4 +32,8 @@
     <select id="getStudents" resultType="Student">
         select name,qq,skill,id from student;
     </select>
+
+    <select id="getStudentsByPage" resultType="Student">
+        select name,qq,skill,id from student limit #{start},#{pageSize}
+    </select>
 </mapper>

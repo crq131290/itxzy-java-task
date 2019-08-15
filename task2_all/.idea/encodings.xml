@@ -2,5 +2,8 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/logs/app.log" charset="GBK" />
+    <file url="file://D:/Program Files/Tomcat9/bin/Logs/error.log" charset="GBK" />
+    <file url="PROJECT" charset="GBK" />
   </component>
 </project>

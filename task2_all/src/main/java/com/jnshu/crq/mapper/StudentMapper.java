@@ -1,6 +1,7 @@
 package com.jnshu.crq.mapper;
 
 import com.jnshu.crq.pojo.Student;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -14,4 +15,6 @@ public interface StudentMapper {
     Student getStudentById(int id);
 
     List<Student> getStudents();
+
+    List<Student> getStudentsByPage(@Param("start")int start,@Param("pageSize")int pageSize);
 }

@@ -1,8 +1,16 @@
 package com.jnshu.crq.pojo;
 
+import com.jnshu.crq.annotation.CannotHaveBlank;
+
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
+
 public class Student {
-    private int id;
+    @NotNull(message = "{user.name.isNull}")//这里是有messageSource，由于没指定所以使用系统的local，即中文环境，读取_zh_CN.properties
     private String name;
+    private int id;
+
+    @CannotHaveBlank(message = "qq不能有空格")
     private String qq;
     private String skill;
 

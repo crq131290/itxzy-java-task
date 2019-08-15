@@ -9,6 +9,8 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.FileSystemXmlApplicationContext;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
@@ -38,6 +40,10 @@ public class StudentServiceTest {
 
     @Test
     public void insertStudent(){
+//        ApplicationContext ctx =  new FileSystemXmlApplicationContext("classpath:/applicationContext.xml");
+//        StudentService studentService1 = (StudentService)ctx.getBean("studentss");
+//        Student student = studentService1.getStudentById(26);
+//        System.out.println(student);
         Student student = new Student();
         student.setQq("676767");
         student.setName("李栓但");
@@ -53,9 +59,16 @@ public class StudentServiceTest {
     }
 
     @Test
+    public void getStudentById(){
+        Student student = studentService.getStudentById(1);
+        System.out.println("+++++++++");
+        logger.info(student);
+    }
+
+    @Test
     public void updateStudent(){
         Student student = new Student();
-        student.setId(14);
+        student.setId(1);
         student.setQq("66666");
         student.setName("王花花的同学");
         student.setSkill("web");
@@ -65,8 +78,12 @@ public class StudentServiceTest {
 
     @Test
     public void getStudents(){
-        List<Student> list = studentService.getStudents();
-        logger.info(list);
+        try {
+            List<Student> list = studentService.getStudents();
+            logger.info(list);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
 

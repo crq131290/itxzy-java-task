@@ -14,4 +14,6 @@ public interface StudentService {
     Student getStudentById(int id);
 
     List<Student> getStudents();
+
+    List<Student> getStudentsByPage(int start,int pageSize);
 }

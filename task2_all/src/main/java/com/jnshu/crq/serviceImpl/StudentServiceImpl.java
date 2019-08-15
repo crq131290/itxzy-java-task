@@ -28,19 +28,28 @@ public class StudentServiceImpl implements StudentService {
 
     @Override
     public Boolean updateStudent(Student student) {
+        System.out.println("======++++++");
         studentMapper.updateStudent(student);
+        System.out.println("============");
         return true;
     }
 
     @Override
     public Student getStudentById(int id) {
         Student student = studentMapper.getStudentById(id);
+
         return student;
     }
 
     @Override
     public List<Student> getStudents() {
         List<Student> list = studentMapper.getStudents();
+        return list;
+    }
+
+    @Override
+    public List<Student> getStudentsByPage(int start,int pageSize) {
+        List<Student> list = studentMapper.getStudentsByPage(start,pageSize);
         return list;
     }
 }

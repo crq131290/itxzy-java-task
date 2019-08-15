@@ -30,11 +30,11 @@
         console.log($("#qq").val())
         console.log($("#skill").val())
         var params = {
-            name:$("#name").val(),
+            name:null,//$("#name").val()
             qq:$("#qq").val(),
             skill:$("#skill").val(),
         }
-        $.ajax("/task2/student/update/"+id,{
+        $.ajax("/task2/task/student/"+id,{
             type:"PUT",
             data:JSON.stringify(params),
             contentType:'application/json;charset=utf-8',
@@ -43,7 +43,7 @@
             },
             success:function (data) {
                 alert("更新成功")
-                window.location.href = "http://localhost:8080/task2/student/list"
+                window.location.href = "../student/list/1/10"
             }
         })
     }

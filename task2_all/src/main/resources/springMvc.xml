@@ -71,4 +71,26 @@
     </mvc:annotation-driven>
     <!--拦截url请求。-->
     <!--<mvc:interceptors/>-->
+    <!--6.MessageSource 国际化-->
+    <bean id="messageSource"
+          class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+        <property name="basenames">
+            <list>
+                <value>classpath:message/messages</value>
+                <!--<value>classpath:message/valide</value>-->
+            </list>
+        </property>
+        <property name="useCodeAsDefaultMessage" value="true"></property>
+        <property name="fileEncodings" value="utf-8"/>
+        <property name="cacheSeconds" value="120"/>
+    </bean>
+    <!-- 注册验证器 -->
+    <mvc:annotation-driven validator="validator" />
+    <bean id="validator" class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean">
+        <property name="providerClass" value="org.hibernate.validator.HibernateValidator" />
+        <!--这里配置将使用上面国际化配置的messageSource -->
+        <property name="validationMessageSource" ref="messageSource" />
+    </bean>
+
+    <aop:aspectj-autoproxy proxy-target-class="true"/>
 </beans>
