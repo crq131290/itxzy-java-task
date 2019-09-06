@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--mybatis mapper配置文件，根据com..mapper配合动态生成其实现类，主要操作数据库-->
+<!--命名空间应该是对应接口的包名+接口名 -->
+<mapper namespace="com.jnshu.crq.mapper.ReplyMapper">
+    <!--<insert id="add" parameterType="Student" keyProperty="id" useGeneratedKeys="true">-->
+    <!--insert into student ( name,age,qq ) values (#{name},#{age},#{qq})-->
+    <!--</insert>-->
+
+    <insert id="insert" parameterType="Reply">
+        <selectKey resultType="int" order="AFTER" keyProperty="id">
+            select LAST_INSERT_ID()
+        </selectKey>
+        insert into reply_tb (create_time,content,u_id,to_u_id,r_id,art_id) values
+        (#{createAt},#{content},#{userId},#{otherId},#{replyId},#{artId})
+    </insert>
+
+    <delete id="delete" parameterType="int">
+        delete from reply_tb where id = #{id}
+    </delete>
+
+    <update id="update" parameterType="Reply">
+        update reply_tb set update_time = #{updateAt},content=#{content},u_id=#{userId},
+        to_u_id=#{otherId},r_id=#{replyId},art_id=#{artId} where id = #{id}
+    </update>
+
+    <select id="getReply" resultMap="BaseResultMap">
+        select id,create_time,update_time,content,u_id,to_u_id,r_id,art_id from reply_tb where id = #{id}
+    </select>
+
+    <select id="getReplyList" resultMap="BaseResultMap" parameterType="int">
+        SELECT t1.*,t2.other_name,t2.other_id FROM
+        (SELECT reply_tb.*,user_tb.name as user_name,user_tb.id as user_id  FROM reply_tb LEFT JOIN user_tb ON reply_tb.u_id = user_tb.id) as t1
+        LEFT JOIN
+        (SELECT reply_tb.*,user_tb.name as other_name,user_tb.id as other_id  FROM reply_tb LEFT JOIN user_tb ON reply_tb.to_u_id = user_tb.id) as t2
+        ON t1.id = t2.id where t1.art_id = #{artId};
+    </select>
+    <!--SELECT r.id,r.create_time,r.update_time,r.content,r.r_id,r.art_id,u.id as user_id,u.name as user_name from reply_tb r,user_tb u where r.u_id = u.id and r.art_id = #{artId};-->
+
+
+
+
+    <resultMap id="BaseResultMap" type="com.jnshu.crq.model.Reply">
+        <id column="id" property="id" />
+        <result column="create_time" property="createAt" />
+        <result column="update_time" property="updateAt" />
+        <result column="content" property="content" />
+        <result column="r_id" property="replyId" />
+        <result column="art_id" property="artId" />
+        <association property="user" javaType="User">
+            <id column="user_id" property="id" jdbcType="BIGINT"></id>
+            <result column="user_name" property="name" jdbcType="VARCHAR"></result>
+        </association>
+        <association property="other" javaType="User">
+            <id column="other_id" property="id" jdbcType="BIGINT"></id>
+            <result column="other_name" property="name" jdbcType="VARCHAR"></result>
+        </association>
+    </resultMap>
+
+
+</mapper>

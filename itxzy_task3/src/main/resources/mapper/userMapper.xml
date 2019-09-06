@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--mybatis mapper配置文件，根据com..mapper配合动态生成其实现类，主要操作数据库-->
+<!--命名空间应该是对应接口的包名+接口名 -->
+<mapper namespace="com.jnshu.crq.mapper.UserMapper">
+    <!--<insert id="add" parameterType="Student" keyProperty="id" useGeneratedKeys="true">-->
+    <!--insert into student ( name,age,qq ) values (#{name},#{age},#{qq})-->
+    <!--</insert>-->
+
+    <insert id="insert" parameterType="User">
+        <selectKey resultType="int" order="AFTER" keyProperty="id">
+            select LAST_INSERT_ID()
+        </selectKey>
+        insert into user_tb (create_time,update_time,name,password,synopsis,phone,email) values
+        (#{createAt},#{updateAt},#{name},#{password},#{synopsis},#{phone},#{email})
+    </insert>
+
+    <delete id="delete" parameterType="int">
+        delete from user_tb where id = #{id}
+    </delete>
+
+    <update id="update" parameterType="User">
+        update user_tb set create_time = #{createAt},update_time = #{updateAt},name=#{name},password=#{password},
+        synopsis=#{synopsis},phone=#{phone},email=#{email} where id = #{id}
+    </update>
+
+    <select id="getUser" resultMap="BaseResultMap">
+        select create_time ,update_time,name,password,synopsis,phone,email from user_tb where id = #{id}
+    </select>
+
+    <select id="getUserList" resultMap="BaseResultMap">
+        select create_time ,update_time,name,password,synopsis,phone,email from user_tb
+    </select>
+    <select id="getUserByName" resultMap="BaseResultMap">
+        select create_time ,update_time,name,password,synopsis,phone,email from user_tb where name = #{name}
+    </select>
+    <select id="getUserLogin" resultMap="BaseResultMap">
+        select create_time ,update_time,name,password,synopsis,phone,email from user_tb where name = #{name} and password = #{password}
+    </select>
+
+    <resultMap id="BaseResultMap" type="com.jnshu.crq.model.User">
+        <id column="id" property="id" />
+        <result column="create_time" property="createAt" />
+        <result column="update_time" property="updateAt" />
+        <result column="name" property="name" />
+        <result column="password" property="password" />
+        <result column="synopsis" property="synopsis" />
+        <result column="phone" property="phone" />
+        <result column="email" property="email" />
+    </resultMap>
+
+</mapper>

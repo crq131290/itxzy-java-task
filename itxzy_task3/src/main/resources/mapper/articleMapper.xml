@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--mybatis mapper配置文件，根据com..mapper配合动态生成其实现类，主要操作数据库-->
+<!--命名空间应该是对应接口的包名+接口名 -->
+<mapper namespace="com.jnshu.crq.mapper.ArticleMapper">
+    <!--<insert id="add" parameterType="Student" keyProperty="id" useGeneratedKeys="true">-->
+    <!--insert into student ( name,age,qq ) values (#{name},#{age},#{qq})-->
+    <!--</insert>-->
+
+    <insert id="insert" parameterType="Article">
+        <selectKey resultType="int" order="AFTER" keyProperty="id">
+            select LAST_INSERT_ID()
+        </selectKey>
+        insert into art_detail_tb (create_time,update_time,name,class,type,user_id,time,img,synopsis) values
+        (#{createAt},#{updateAt},#{name},#{artClass},#{type},#{userId},#{time},#{img},#{synopsis})
+    </insert>
+
+    <delete id="delete" parameterType="int">
+        delete from art_detail_tb where id = #{id}
+    </delete>
+
+    <update id="update" parameterType="Article">
+        update art_detail_tb set create_time = #{createAt},update_time = #{updateAt},name=#{name},class=#{artClass},
+        type=#{type},user_id=#{userId},time=#{time},img=#{img},synopsis=#{synopsis} where id = #{id}
+    </update>
+
+    <select id="getArticle" resultMap="BaseResultMap">
+        select id,create_time,update_time,name,class,type,user_id,time,img,synopsis from art_detail_tb where id = #{id}
+    </select>
+
+    <select id="getArticleList" resultMap="BaseResultMap">
+        select id,create_time,update_time,name,class,type,user_id,time,img,synopsis from art_detail_tb
+    </select>
+
+    <select id="getArticleByUserId" resultMap="BaseResultMap" parameterType="int">
+        select id,create_time,update_time,name,class,type,user_id,time,img,synopsis from art_detail_tb where user_id = #{userId}
+    </select>
+    <select id="getArticleByType" resultMap="BaseResultMap" parameterType="int">
+        select id,create_time,update_time,name,class,type,user_id,time,img,synopsis from art_detail_tb where user_id = #{type}
+    </select>
+
+    <select id="getArticleByKeyword" resultMap="BaseResultMap" parameterType="string">
+        (select id,create_time,update_time,name,class,type,user_id,time,img,synopsis from art_detail_tb where name like concat('%',#{keyword},'%')     )
+        union all
+        (select id,create_time,update_time,name,class,type,user_id,time,img,synopsis from art_detail_tb where synopsis like concat('%',#{keyword},'%')     )
+
+    </select>
+
+    <resultMap id="BaseResultMap" type="com.jnshu.crq.model.Article">
+        <id column="id" property="id" />
+        <result column="create_time" property="createAt" />
+        <result column="update_time" property="updateAt" />
+        <result column="name" property="name" />
+        <result column="class" property="artClass" />
+        <result column="synopsis" property="synopsis" />
+        <result column="user_id" property="userId" />
+        <result column="time" property="time" />
+        <result column="img" property="img" />
+        <result column="type" property="type" />
+    </resultMap>
+
+</mapper>

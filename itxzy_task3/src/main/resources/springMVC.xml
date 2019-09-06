@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+        http://www.springframework.org/schema/mvc
+        http://www.springframework.org/schema/mvc/spring-mvc-4.2.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop-4.2.xsd
+        http://www.springframework.org/schema/tx
+        http://www.springframework.org/schema/tx/spring-tx.xsd">
+    <!--自动装配-->
+    <context:annotation-config/>
+    <!--自动扫描，其实和自动转配二选一即可，这里主要配置controller-->
+    <context:component-scan base-package="com.jnshu.crq.action">
+        <!--扫描所有的Controller的实现类（Controller是spring的一个接口）,controller在mvc-->
+        <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+    </context:component-scan>
+    <!--解析器Resolver-->
+    <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="order" value="1" />
+        <property name="prefix" value="/WEB-INF/jsp/" />
+        <property name="suffix" value=".jsp" />
+    </bean>
+    <!--统一处理异常的解析器-->
+    <!--<bean id="exceptionResolver" class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">-->
+    <!--<property name="warnLogCategory" value="warn" />-->
+    <!--<property name="defaultStatusCode" value="500"/>-->
+    <!--<property name="defaultErrorView" value="/error/500"/>-->
+
+    <!--<property name="exceptionMappings">-->
+    <!--<props>-->
+    <!--<prop key="java.lang.Exception">/error/500</prop>-->
+    <!--</props>-->
+    <!--</property>-->
+
+    <!--<property name="statusCodes">-->
+    <!--<props>-->
+    <!--<prop key="/error/404">404</prop>-->
+    <!--<prop key="/error/404">400</prop>-->
+    <!--<prop key="/error/500">500</prop>-->
+    <!--</props>-->
+    <!--</property>-->
+    <!--</bean>-->
+
+    <!--静态资源的处理，两种方式如果发现是静态资源的请求，就将该请求转由Web应用服务器默认的Servlet处理，如果不是静态资源的请求，才由DispatcherServlet继续处理。-->
+    <mvc:default-servlet-handler />
+    <!--<mvc:resources />-->
+    <!--<context:annotation-config>并没有帮我们声明controller所用的注解，比如@RequestMapping,
+        @StudentController。所以我们需要<mvc:annotation-driven />。-->
+
+    <mvc:annotation-driven >
+        <!--主要处理的是response返回的值-->
+        <!--<mvc:message-converters/>-->
+        <!--<mvc:message-converters register-defaults="true">-->
+        <!--<bean class="org.springframework.http.converter.StringHttpMessageConverter">-->
+        <!--<property name="supportedMediaTypes" value = "text/plain;charset=UTF-8" />-->
+        <!--</bean>-->
+        <!--</mvc:message-converters>-->
+        <mvc:message-converters>
+            <bean class="org.springframework.http.converter.StringHttpMessageConverter">
+                <constructor-arg value="UTF-8" />
+                <property name="writeAcceptCharset" value="false" />
+            </bean>
+        </mvc:message-converters>
+    </mvc:annotation-driven>
+    <!--拦截url请求。-->
+    <!--<mvc:interceptors/>-->
+    <aop:aspectj-autoproxy proxy-target-class="true"/>
+</beans>
