@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--mybatis mapper配置文件，根据com..mapper配合动态生成其实现类，主要操作数据库-->
+<!--命名空间应该是对应接口的包名+接口名 -->
+<mapper namespace="com.jnshu.crq.mapper.ProfessTypeMapper">
+
+    <select id="getProfessTypeList" resultMap="BaseResultMap">
+        select * from profess_type_tb;
+    </select>
+    <resultMap id="BaseResultMap" type="com.jnshu.crq.model.ProfessType">
+        <id column="id" property="id"></id>
+        <result column="name" property="name"></result>
+    </resultMap>
+</mapper>

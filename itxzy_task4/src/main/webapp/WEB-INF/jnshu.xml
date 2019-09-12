@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+    <!-- 主布局 -->
+    <definition name="jnshu" template="/WEB-INF/jsp/jnshu.jsp">
+    </definition>
+    <!-- 主布局 -->
+    <!-- 项目 -->
+    <definition name="*.page" extends="jnshu">
+        <put-attribute name="header" value="/WEB-INF/jsp/header.jsp" />
+        <!--这里使用通配符来动态调整参数，1,2对应通配的位置-->
+        <put-attribute name="body" value="/WEB-INF/jsp/{1}.jsp" />
+        <!--这里使用el表达式来接受参数,${asd}就是接受回来的返回值-->
+        <!--<put-attribute name="header" value="/WEB-INF/jsp/${asd}.jsp" />-->
+        <put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp" />
+    </definition>
+
+    <!--项目-->
+</tiles-definitions>
