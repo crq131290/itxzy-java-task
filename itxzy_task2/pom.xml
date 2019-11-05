@@ -24,7 +24,7 @@
         <c3p0.version>0.9.1.2</c3p0.version>
         <mysql.connect.version>5.1.46</mysql.connect.version>
         <log4j.version>2.9.0</log4j.version>
-        <jackon.version>2.9.5</jackon.version>
+        <jackon.version>2.10.0</jackon.version>
     </properties>
 
     <dependencies>
